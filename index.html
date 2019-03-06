@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="pizzaStyle.css">
+
+  <title>PizzaCalculator</title>
+</head>
+<body>
+
+  <ul>
+    <li class="dropdown">
+      <a class="dropbtn">Choose your delicate Pizza!</a>
+      <div class="dropdown-content" id="pizzaNameList" >
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a class="dropbtn">Choose your topping!</a>
+      <div class="dropdown-content" id="toppingNameList" >
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a class="dropbtn">Choose your size!</a>
+      <div class="dropdown-content" id="sizeNameList" />
+    </li>
+
+    <li class="dropdown">
+      <a class="dropbtn">Choose your slicing!</a>
+      <div class="dropdown-content" id="slicingNameList" >
+      </div>
+    </li>
+
+    <li class="dropdown">
+      <a class="dropbtn">Choose your order way!</a>
+      <div class="dropdown-content" id="additionalList" >
+      </div>
+    </li>
+  </ul>
+
+  <div  id="alert" class="w3-panel w3-green">
+    <p>Your transaction has been added to the cart!</p>
+  </div>
+
+
+<div style="margin-left:25%">
+
+<h1>Welcome to The Pizza Calculator!</h1>
+
+<h1 id="pizzaName" class="w3-display-bottommiddle" ></h1>
+<img id="pizzaImage" class="w3-display-middle" class="w3-hide" src="" style="width:400px" style="height:400px" />
+<h1 id="pizzaPrice" class="w3-display-bottomright"> $0.00 </h3>
+</div>
+
+<div id="shoppingCart" class="w3-display-bottomleft">
+  <h1>Shopping Cart</h1>
+<p id="pizzaOrders"> </p>
+<p id="toppingOrders"> </p>
+<p id="sizeOrders"> </p>
+<p id="slicingOrders"> </p>
+<p id="additionalOrders"> </p>
+</div>
+
+<script src="pizzaScript.js"></script>
+</body>
+</html>
